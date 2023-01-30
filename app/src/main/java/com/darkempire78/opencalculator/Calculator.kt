@@ -1,6 +1,5 @@
 package com.darkempire78.opencalculator
 
-import java.math.BigDecimal
 import java.math.BigInteger
 import kotlin.math.*
 
@@ -26,14 +25,14 @@ class Calculator {
         // https://rosettacode.org/wiki/Gamma_function
         var xx = x
         val p = doubleArrayOf(
-            0.99999999999980993,
+            0.9999999999998099,
             676.5203681218851,
             -1259.1392167224028,
-            771.32342877765313,
-            -176.61502916214059,
+            771.3234287776531,
+            -176.6150291621406,
             12.507343278686905,
             -0.13857109526572012,
-            9.9843695780195716e-6,
+            9.984369578019572E-6,
             1.5056327351493116e-7
         )
         val g = 7
@@ -67,7 +66,7 @@ class Calculator {
             fun parse(): Double {
                 nextChar()
                 val x = parseExpression()
-                if (pos < equation.length) println("Unexpected: " + ch.toChar() + "Expressoion: " + equation)
+                if (pos < equation.length) println("Unexpected: " + ch.toChar() + "Expression: " + equation)
                 return x
             }
 

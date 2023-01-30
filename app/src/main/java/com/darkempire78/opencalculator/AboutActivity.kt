@@ -2,13 +2,12 @@ package com.darkempire78.opencalculator
 
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.content.res.Configuration
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.darkempire78.opencalculator.databinding.ActivityAboutBinding
 
+@Suppress("DEPRECATION")
 class AboutActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAboutBinding
 

@@ -1,5 +1,6 @@
 package com.darkempire78.opencalculator
 
+import android.annotation.SuppressLint
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context.CLIPBOARD_SERVICE
@@ -36,11 +37,13 @@ class HistoryAdapter(
             )
         }
 
+        @SuppressLint("NotifyDataSetChanged")
         fun appendOneHistoryElement(history: History) {
             this.history.add(history)
             notifyDataSetChanged()
         }
 
+        @SuppressLint("NotifyDataSetChanged")
         fun clearHistory() {
             this.history.clear()
             notifyDataSetChanged()

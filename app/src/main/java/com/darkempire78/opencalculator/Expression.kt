@@ -155,7 +155,7 @@ class Expression {
         var cleanCalculation = calculation
         var parenthesisOpened = 0
 
-        var cleanCalculationLength = cleanCalculation.length
+        val cleanCalculationLength = cleanCalculation.length
         var i = 0
         while (i < cleanCalculationLength) {
             if (i < cleanCalculation.length - 1) {
@@ -181,7 +181,7 @@ class Expression {
         var cleanCalculation = calculation
         var parenthesisOpened = 0
 
-        var cleanCalculationLength = cleanCalculation.length
+        val cleanCalculationLength = cleanCalculation.length
         var i = cleanCalculationLength - 1
         while (i > 0) {
             if (parenthesisOpened > 0) {
